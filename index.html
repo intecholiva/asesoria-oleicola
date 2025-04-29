@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asesoría Oleícola</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="title">Asesoría y Mejora en el Sector Oleícola</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#agronomy">Factores Agronómicos</a>
+      <a href="#technology">Tecnología y Proceso</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <div class="language-selector">
+      <button onclick="setLanguage('es')">Español</button>
+      <button onclick="setLanguage('fr')">Français</button>
+      <button onclick="setLanguage('ar')">العربية</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2 data-key="home_title">Home</h2>
+
+      <h3 data-key="who_we_are">Quiénes Somos</h3>
+      <p data-key="who_description">Somos un equipo multidisciplinario...</p>
+
+      <h3 data-key="programs">Programas</h3>
+      <p data-key="programs_description">Ofrecemos programas de asesoría técnica...</p>
+
+      <h3 data-key="news">Actualidades</h3>
+      <p data-key="news_description">Aquí encontrarás las últimas novedades...</p>
+    </section>
+
+    <section id="agronomy">
+      <h2 data-key="agronomy_title">Factores Agronómicos</h2>
+      <p data-key="agronomy_description">Analizamos y optimizamos los factores agronómicos clave...</p>
+    </section>
+
+    <section id="technology">
+      <h2 data-key="tech_title">Tecnología y Proceso</h2>
+      <p data-key="tech_description">Implementamos programas de seguimiento técnico...</p>
+    </section>
+
+    <section id="contact">
+      <h2 data-key="contact_title">Contacto</h2>
+      <form>
+        <label data-key="name_label">Nombre:</label>
+        <input type="text" name="name" required />
+        <label data-key="email_label">Correo electrónico:</label>
+        <input type="email" name="email" required />
+        <label data-key="message_label">Mensaje:</label>
+        <textarea name="message" rows="5" required></textarea>
+        <button type="submit" data-key="submit_button">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/lang.js"></script>
+</body>
+</html>
